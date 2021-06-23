@@ -1,0 +1,17 @@
+@hostame = localhost
+@port = 3000
+@host = {{hostame}}:{{port}}
+@contentType= application/json
+GET http://{{host}}/api/v1/register
+
+###
+POST http://localhost:3000/api/v1/register HTTP/1.1
+content-type: application/json
+    {
+        "name": "Brian",
+        "lastName": "Argel",
+        "birthDate":"2016-04-11",
+        "city": "Sincelejo",
+        "email": "bfargel@ineran.edu.co",
+        "password": "Hacker",
+    }
